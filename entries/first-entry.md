@@ -1,5 +1,5 @@
 ---
-title: First post
+title: First entry
 date: 2020-05-02T06:47
 location: Groningen
 ---
