@@ -27,5 +27,5 @@ thing I want to do is see if there's any better way to store posts. Currently I
 write the post on my mac and build it into the bundle
 (with <code>POST_DIR</code>) but I want to do this online and have it ci-ed.
 
-Signing off for now,
+Signing off for now,  
 Mees
