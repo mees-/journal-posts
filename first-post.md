@@ -6,7 +6,7 @@ location: Groningen
 
 My first entry!  
 
-I've build this blog application today, well actually yesterday. I built it with
+I build this blog application today, well actually yesterday. I built it with
 [Gatsby](https://www.gatsbyjs.org/). I knew Gatsby from projects I've done
 before but I have to say it was some work to get up to speed with the whole
 thing.  
