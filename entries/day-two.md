@@ -22,7 +22,7 @@ The reason I called the project a journal and not a blog is mainly because I
 think journal sounds cooler. As I mentioned in my previous post my main
 motivation for the project was that I wanted a nice way to look at my private
 journal entries. I used to use [Day one](https://dayoneapp.com/) a lot and I
-liked having a place for my thoughts. Those thoughts, however were not meant to
+liked having a place for my thoughts. Those thoughts however, were not meant to
 be made public ever.
 
 I've really enjoyed creating the site and hope to be working on it some more for
