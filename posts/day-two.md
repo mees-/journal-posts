@@ -31,4 +31,9 @@ interesting I should probably write some more posts so the site actually has
 content. If you're interested in how I made the site check out the
 [repo](https://github.com/mees-/journal). This is not the repo the posts and
 travis config are stored in though, thats
-[this one](https://github.com/mees-/journal-posts)
+[this one](https://github.com/mees-/journal-posts). If you have any suggestions
+feel free to submit issues or even pull requests if you want. If you submit a pr
+with a post to the post repo I might even accept the post as a guest post.
+
+Till next time,  
+Mees
