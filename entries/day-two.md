@@ -28,8 +28,8 @@ be made public ever.
 I've really enjoyed creating the site and hope to be working on it some more for
 a while. I have some more ideas for improvements and to make it actually
 interesting I should probably write some more posts so the site actually has
-content. If you're interested in how I made the site check out the
-[repo](https://github.com/mees-/journal). This is not the repo the posts and
+content. If you're interested in how I made the site check out
+[the repo](https://github.com/mees-/journal). This is not the repo the posts and
 travis config are stored in though, thats
 [this one](https://github.com/mees-/journal-posts). If you have any suggestions
 feel free to submit issues or even pull requests if you want. If you submit a pr
