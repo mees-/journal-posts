@@ -22,5 +22,5 @@ Anyways, what follows is a list of things I want to do or work with:
 - [GraphQl](https://graphql.org/) (more than just gatsby)
 - Work with [Mollie](https://www.mollie.com/en/)
 
-  I'll let you know if I do anything and I'll keep updating the list when I
-  think of more things I want to do.
+I'll let you know if I do anything and I'll keep updating the list when I
+think of more things I want to do.
