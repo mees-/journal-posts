@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 12:29:38 GMT</lastBuildDate><item><title><![CDATA[Users app]]></title><description><![CDATA[Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 18:21:42 GMT</lastBuildDate><item><title><![CDATA[JWT service]]></title><description><![CDATA[Hey I’m back with a second post today, and an exciting one. I actually made
+something that I listed in the last post. I made a
+JWT service…]]></description><link>https:/journal.mees.io/jwt-service/</link><guid isPermaLink="false">https:/journal.mees.io/jwt-service/</guid><pubDate>Tue, 05 May 2020 20:08:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey I’m back with a second post today, and an exciting one. I actually made
+something that I listed in the last post. I made a
+&lt;a href=&quot;https://github.com/mees-/jwt-service&quot;&gt;JWT service&lt;/a&gt;. It’s really simple and
+doesn’t control adding users to the list, which means that everyone can add
+users which is probably not the best. It’s fairly easy to add some more
+authorization though, which is what I’ll do if I need to use this for an actual
+project.&lt;/p&gt;
+&lt;p&gt;I’ve used a couple of libraries to create it and they’ve made it very easy to
+build the app. I used &lt;a href=&quot;https://expressjs.com/&quot;&gt;express&lt;/a&gt; as the server framework.
+For JWT I used the
+&lt;a href=&quot;https://github.com/auth0/node-jsonwebtoken#readme&quot;&gt;jsonwebtoken&lt;/a&gt; library, which
+is also very simple. Lastly I needed bcrypt to hash the stored passwords. With
+these three libraries the whole service (without user creation auth) is only a
+single file of 81 sloc (single lines of code). It only has four methods: &lt;code&gt;
+/token&lt;/code&gt;, &lt;code&gt;/validate&lt;/code&gt;, &lt;code&gt;GET&lt;/code&gt; on &lt;code&gt;/user&lt;/code&gt;
+and &lt;code&gt;POST&lt;/code&gt; on &lt;code&gt;/user&lt;/code&gt;. For specific information on how it
+works and to try it out check
+&lt;a href=&quot;https://github.com/mees-/jwt-service&quot;&gt;the github repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Create an issue if you think something should be better, I’ll probably extend it
+a little bit more with extra data on users and authorization on creating users
+but for now it works.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Users app]]></title><description><![CDATA[Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
 when we celebrate that we’ve been freed from war. Normally I…]]></description><link>https:/journal.mees.io/users-app/</link><guid isPermaLink="false">https:/journal.mees.io/users-app/</guid><pubDate>Tue, 05 May 2020 10:12:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
 when we celebrate that we’ve been freed from war. Normally I’d be going to one
 of the (free) fesitvals that are organised each year, but this year that won’t
