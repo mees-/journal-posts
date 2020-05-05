@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 11:17:27 GMT</lastBuildDate><author><![CDATA[Mees van Dijk]]></author><item><title><![CDATA[Users app]]></title><description><![CDATA[Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
+when we celebrate that we’ve been freed from war. Normally I…]]></description><link>https:/journal.mees.io/users-app/</link><guid isPermaLink="false">https:/journal.mees.io/users-app/</guid><dc:creator><![CDATA[Mees van Dijk]]></dc:creator><pubDate>Tue, 05 May 2020 10:12:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
+when we celebrate that we’ve been freed from war. Normally I’d be going to one
+of the (free) fesitvals that are organised each year, but this year that won’t
+be an option. So instead I might watch some streams that are organised as a
+replacement or maybe (digitally) hang out with some friends. Maybe I’ll build a
+thing.&lt;/p&gt;
+&lt;p&gt;Since I wrote my last post I’ve been thinking of things I can build. One of
+the things that I came up with is an app. A simple app that has some users and
+some passwords. It doesn’t need those users to do anything special,
+just let them login in securely.&lt;/p&gt;
+&lt;p&gt;The catch is that I want to use &lt;a href=&quot;https://jwt.io/&quot;&gt;JWT&lt;/a&gt; and
+&lt;a href=&quot;https://graphql.org/&quot;&gt;GraphQl&lt;/a&gt; in it. I think it’ll be fun and a good excercise
+to just build a really simple app that has secure login and a database, just
+like you would when building a real, production app. I really want to learn
+JWT and graphql and I think this could be a good way to do it.&lt;/p&gt;
+&lt;p&gt;I’ll let you know how it went when (if) I’m done making it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Project ideas]]></title><description><![CDATA[I think that because of getting back into actually coding with this project I
+might tryy and do some more projects sometime, hopefully soon…]]></description><link>https:/journal.mees.io/project-ideas/</link><guid isPermaLink="false">https:/journal.mees.io/project-ideas/</guid><dc:creator><![CDATA[Mees van Dijk]]></dc:creator><pubDate>Sun, 03 May 2020 18:52:00 GMT</pubDate><content:encoded>&lt;p&gt;I think that because of getting back into actually coding with this project I
+might tryy and do some more projects sometime, hopefully soon. This entry will
+be a living list of projects or stuff that I want to use in a project.&lt;/p&gt;
+&lt;p&gt;I’ve also been doing some Google analytics and search console things. While I
+don’t love Google for tracking me, they make cool software. SEO is something I
+haven’t really done anything with before. I’ve looked into it a little bit but
+most of it is done by a gatsby plugin that generates a manifest together with an
+existing file from the template that I started with that automatically generates
+&lt;code&gt;meta&lt;/code&gt; header tags.&lt;/p&gt;
+&lt;p&gt;Anyways, what follows is a list of things I want to do or work with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jwt.io/&quot;&gt;JWT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://graphql.org/&quot;&gt;GraphQl&lt;/a&gt; (more than just gatsby)&lt;/li&gt;
+&lt;li&gt;Work with &lt;a href=&quot;https://www.mollie.com/en/&quot;&gt;Mollie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I’ll let you know if I do anything and I’ll keep updating the list when I
+think of more things I want to do.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Day two]]></title><description><![CDATA[I’ve been working some more on the blog today. I set up a better way to publish
+posts. I now have a separate git repository that is set up…]]></description><link>https:/journal.mees.io/day-two/</link><guid isPermaLink="false">https:/journal.mees.io/day-two/</guid><dc:creator><![CDATA[Mees van Dijk]]></dc:creator><pubDate>Sat, 02 May 2020 18:58:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ve been working some more on the blog today. I set up a better way to publish
+posts. I now have a separate git repository that is set up with
+&lt;a href=&quot;https://travis-ci.com&quot;&gt;travis-ci&lt;/a&gt;. Every time I push a new commit to the master
+branch there travis-ci does a new build.&lt;/p&gt;
+&lt;p&gt;Basically I have a script that travis runs that downloads the main code and uses
+it’s build script to create a build that includes the posts. Then with some
+(fairly easy) travis configuration I got it to automatically publish to Github
+pages.&lt;/p&gt;
+&lt;p&gt;I’ve also changed some styles on the website to make things more readable. With
+those changes the site now has a perfect score in lighthouse. Try it out
+yourself and see some fireworks!&lt;/p&gt;
+&lt;p&gt;The reason I called the project a journal and not a blog is mainly because I
+think journal sounds cooler. As I mentioned in my previous post my main
+motivation for the project was that I wanted a nice way to look at my private
+journal entries. I used to use &lt;a href=&quot;https://dayoneapp.com/&quot;&gt;Day one&lt;/a&gt; a lot and I
+liked having a place for my thoughts. Those thoughts however, were not meant to
+be made public ever.&lt;/p&gt;
+&lt;p&gt;I’ve really enjoyed creating the site and hope to be working on it some more for
+a while. I have some more ideas for improvements and to make it actually
+interesting I should probably write some more posts so the site actually has
+content. If you’re interested in how I made the site check out
+&lt;a href=&quot;https://github.com/mees-/journal&quot;&gt;the repo&lt;/a&gt;. This is not the repo the posts and
+travis config are stored in though, thats
+&lt;a href=&quot;https://github.com/mees-/journal-posts&quot;&gt;this one&lt;/a&gt;. If you have any suggestions
+feel free to submit issues or even pull requests if you want. If you submit a pr
+with a post to the post repo I might even accept the post as a guest post.&lt;/p&gt;
+&lt;p&gt;Till next time,&lt;br&gt;
+Mees&lt;/p&gt;</content:encoded></item><item><title><![CDATA[First entry]]></title><description><![CDATA[My first entry!   I build this blog application today, well actually yesterday. I built it with
+Gatsby. I knew Gatsby from projects I’ve…]]></description><link>https:/journal.mees.io/first-entry/</link><guid isPermaLink="false">https:/journal.mees.io/first-entry/</guid><dc:creator><![CDATA[Mees van Dijk]]></dc:creator><pubDate>Sat, 02 May 2020 06:47:00 GMT</pubDate><content:encoded>&lt;p&gt;My first entry!  &lt;/p&gt;
+&lt;p&gt;I build this blog application today, well actually yesterday. I built it with
+&lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt;. I knew Gatsby from projects I’ve done
+before but I have to say it was some work to get up to speed with the whole
+thing.  &lt;/p&gt;
+&lt;p&gt;I struggled with getting pages to be built from source plugins and such. The
+whole platform is fairly easy to use however when you just follow the tutorial.
+Which is also what I ended up doing. I also played around with some templates
+before settling with the blog template and stripping it of most boilerplate it
+had.&lt;/p&gt;
+&lt;p&gt;I initially wanted to develop this application for my private journal but once I
+got it running and looking sort of what I want it to look like I couldn’t not
+publish it. And since I want to publish it it should probably have at least one
+post.&lt;/p&gt;
+&lt;p&gt;That’s my first post. I’ll probably (hopefully) make some more improvements. One
+thing I want to do is see if there’s any better way to store posts. Currently I
+write the post on my mac and build it into the bundle
+(with &lt;code&gt;POST_DIR&lt;/code&gt;) but I want to do this online and have it ci-ed.&lt;/p&gt;
+&lt;p&gt;Signing off for now,&lt;br&gt;
+Mees&lt;/p&gt;</content:encoded></item></channel></rss>
