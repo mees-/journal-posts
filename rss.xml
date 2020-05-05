@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 18:21:42 GMT</lastBuildDate><item><title><![CDATA[JWT service]]></title><description><![CDATA[Hey I’m back with a second post today, and an exciting one. I actually made
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 18:32:23 GMT</lastBuildDate><item><title><![CDATA[JWT service]]></title><description><![CDATA[Hey I’m back with a second post today, and an exciting one. I actually made
 something that I listed in the last post. I made a
 JWT service…]]></description><link>https:/journal.mees.io/jwt-service/</link><guid isPermaLink="false">https:/journal.mees.io/jwt-service/</guid><pubDate>Tue, 05 May 2020 20:08:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey I’m back with a second post today, and an exciting one. I actually made
 something that I listed in the last post. I made a
@@ -49,7 +49,7 @@ existing file from the template that I started with that automatically generates
 &lt;p&gt;Anyways, what follows is a list of things I want to do or work with:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://jwt.io/&quot;&gt;JWT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jwt.io/&quot;&gt;JWT&lt;/a&gt; UPDATE: see &lt;a href=&quot;/jwt-service/&quot;&gt;the post&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://graphql.org/&quot;&gt;GraphQl&lt;/a&gt; (more than just gatsby)&lt;/li&gt;
 &lt;li&gt;Work with &lt;a href=&quot;https://www.mollie.com/en/&quot;&gt;Mollie&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
