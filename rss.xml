@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 11:17:27 GMT</lastBuildDate><author><![CDATA[Mees van Dijk]]></author><item><title><![CDATA[Users app]]></title><description><![CDATA[Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
-when we celebrate that we’ve been freed from war. Normally I…]]></description><link>https:/journal.mees.io/users-app/</link><guid isPermaLink="false">https:/journal.mees.io/users-app/</guid><dc:creator><![CDATA[Mees van Dijk]]></dc:creator><pubDate>Tue, 05 May 2020 10:12:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 12:29:38 GMT</lastBuildDate><item><title><![CDATA[Users app]]></title><description><![CDATA[Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
+when we celebrate that we’ve been freed from war. Normally I…]]></description><link>https:/journal.mees.io/users-app/</link><guid isPermaLink="false">https:/journal.mees.io/users-app/</guid><pubDate>Tue, 05 May 2020 10:12:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
 when we celebrate that we’ve been freed from war. Normally I’d be going to one
 of the (free) fesitvals that are organised each year, but this year that won’t
 be an option. So instead I might watch some streams that are organised as a
@@ -15,7 +15,7 @@ to just build a really simple app that has secure login and a database, just
 like you would when building a real, production app. I really want to learn
 JWT and graphql and I think this could be a good way to do it.&lt;/p&gt;
 &lt;p&gt;I’ll let you know how it went when (if) I’m done making it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Project ideas]]></title><description><![CDATA[I think that because of getting back into actually coding with this project I
-might tryy and do some more projects sometime, hopefully soon…]]></description><link>https:/journal.mees.io/project-ideas/</link><guid isPermaLink="false">https:/journal.mees.io/project-ideas/</guid><dc:creator><![CDATA[Mees van Dijk]]></dc:creator><pubDate>Sun, 03 May 2020 18:52:00 GMT</pubDate><content:encoded>&lt;p&gt;I think that because of getting back into actually coding with this project I
+might tryy and do some more projects sometime, hopefully soon…]]></description><link>https:/journal.mees.io/project-ideas/</link><guid isPermaLink="false">https:/journal.mees.io/project-ideas/</guid><pubDate>Sun, 03 May 2020 18:52:00 GMT</pubDate><content:encoded>&lt;p&gt;I think that because of getting back into actually coding with this project I
 might tryy and do some more projects sometime, hopefully soon. This entry will
 be a living list of projects or stuff that I want to use in a project.&lt;/p&gt;
 &lt;p&gt;I’ve also been doing some Google analytics and search console things. While I
@@ -33,7 +33,7 @@ existing file from the template that I started with that automatically generates
 &lt;/ul&gt;
 &lt;p&gt;I’ll let you know if I do anything and I’ll keep updating the list when I
 think of more things I want to do.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Day two]]></title><description><![CDATA[I’ve been working some more on the blog today. I set up a better way to publish
-posts. I now have a separate git repository that is set up…]]></description><link>https:/journal.mees.io/day-two/</link><guid isPermaLink="false">https:/journal.mees.io/day-two/</guid><dc:creator><![CDATA[Mees van Dijk]]></dc:creator><pubDate>Sat, 02 May 2020 18:58:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ve been working some more on the blog today. I set up a better way to publish
+posts. I now have a separate git repository that is set up…]]></description><link>https:/journal.mees.io/day-two/</link><guid isPermaLink="false">https:/journal.mees.io/day-two/</guid><pubDate>Sat, 02 May 2020 18:58:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ve been working some more on the blog today. I set up a better way to publish
 posts. I now have a separate git repository that is set up with
 &lt;a href=&quot;https://travis-ci.com&quot;&gt;travis-ci&lt;/a&gt;. Every time I push a new commit to the master
 branch there travis-ci does a new build.&lt;/p&gt;
@@ -61,7 +61,7 @@ feel free to submit issues or even pull requests if you want. If you submit a pr
 with a post to the post repo I might even accept the post as a guest post.&lt;/p&gt;
 &lt;p&gt;Till next time,&lt;br&gt;
 Mees&lt;/p&gt;</content:encoded></item><item><title><![CDATA[First entry]]></title><description><![CDATA[My first entry!   I build this blog application today, well actually yesterday. I built it with
-Gatsby. I knew Gatsby from projects I’ve…]]></description><link>https:/journal.mees.io/first-entry/</link><guid isPermaLink="false">https:/journal.mees.io/first-entry/</guid><dc:creator><![CDATA[Mees van Dijk]]></dc:creator><pubDate>Sat, 02 May 2020 06:47:00 GMT</pubDate><content:encoded>&lt;p&gt;My first entry!  &lt;/p&gt;
+Gatsby. I knew Gatsby from projects I’ve…]]></description><link>https:/journal.mees.io/first-entry/</link><guid isPermaLink="false">https:/journal.mees.io/first-entry/</guid><pubDate>Sat, 02 May 2020 06:47:00 GMT</pubDate><content:encoded>&lt;p&gt;My first entry!  &lt;/p&gt;
 &lt;p&gt;I build this blog application today, well actually yesterday. I built it with
 &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt;. I knew Gatsby from projects I’ve done
 before but I have to say it was some work to get up to speed with the whole
