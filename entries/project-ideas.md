@@ -18,7 +18,7 @@ existing file from the template that I started with that automatically generates
 Anyways, what follows is a list of things I want to do or work with:
 
 - [Rust](https://www.rust-lang.org/)
-- [JWT](https://jwt.io/)
+- [JWT](https://jwt.io/) UPDATE: see [the post](/jwt-service/)
 - [GraphQl](https://graphql.org/) (more than just gatsby)
 - Work with [Mollie](https://www.mollie.com/en/)
 
