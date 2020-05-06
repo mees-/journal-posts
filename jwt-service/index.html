@@ -9,11 +9,16 @@ project.</p>
 build the app. I used <a href="https://expressjs.com/">express</a> as the server framework.
 For JWT I used the
 <a href="https://github.com/auth0/node-jsonwebtoken#readme">jsonwebtoken</a> library, which
-is also very simple. Lastly I needed bcrypt to hash the stored passwords. With
-these three libraries the whole service (without user creation auth) is only a
-single file of 81 sloc (single lines of code). It only has four methods: <code>
-/token</code>, <code>/validate</code>, <code>GET</code> on <code>/user</code>
-and <code>POST</code> on <code>/user</code>. For specific information on how it
+is also very simple. To store users I used
+<a href="https://github.com/lukechilds/keyv">keyv</a>. It’s a very simple key/value store
+that has usernames as keys and hashes as values. I don’t need to store the JWTs
+anywhere because they can be verified with just the secret. Keyv has a couple of
+adapters that make it easy to connect it to a persistent database, personally I
+use postgres. Lastly I needed bcrypt to hash the stored passwords. With these
+three libraries the whole service (without user creation auth) is only a single
+file of 81 sloc (single lines of code). It only has four methods: <code>/token
+</code>, <code>/validate</code>, <code>GET</code> on <code>/user</code> and
+<code>POST</code> on <code>/user</code>. For specific information on how it
 works and to try it out check
 <a href="https://github.com/mees-/jwt-service">the github repo</a>.</p>
 <p>Create an issue if you think something should be better, I’ll probably extend it

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 18:32:23 GMT</lastBuildDate><item><title><![CDATA[JWT service]]></title><description><![CDATA[Hey I’m back with a second post today, and an exciting one. I actually made
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 06 May 2020 13:00:59 GMT</lastBuildDate><item><title><![CDATA[JWT service]]></title><description><![CDATA[Hey I’m back with a second post today, and an exciting one. I actually made
 something that I listed in the last post. I made a
 JWT service…]]></description><link>https:/journal.mees.io/jwt-service/</link><guid isPermaLink="false">https:/journal.mees.io/jwt-service/</guid><pubDate>Tue, 05 May 2020 20:08:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey I’m back with a second post today, and an exciting one. I actually made
 something that I listed in the last post. I made a
@@ -11,11 +11,16 @@ project.&lt;/p&gt;
 build the app. I used &lt;a href=&quot;https://expressjs.com/&quot;&gt;express&lt;/a&gt; as the server framework.
 For JWT I used the
 &lt;a href=&quot;https://github.com/auth0/node-jsonwebtoken#readme&quot;&gt;jsonwebtoken&lt;/a&gt; library, which
-is also very simple. Lastly I needed bcrypt to hash the stored passwords. With
-these three libraries the whole service (without user creation auth) is only a
-single file of 81 sloc (single lines of code). It only has four methods: &lt;code&gt;
-/token&lt;/code&gt;, &lt;code&gt;/validate&lt;/code&gt;, &lt;code&gt;GET&lt;/code&gt; on &lt;code&gt;/user&lt;/code&gt;
-and &lt;code&gt;POST&lt;/code&gt; on &lt;code&gt;/user&lt;/code&gt;. For specific information on how it
+is also very simple. To store users I used
+&lt;a href=&quot;https://github.com/lukechilds/keyv&quot;&gt;keyv&lt;/a&gt;. It’s a very simple key/value store
+that has usernames as keys and hashes as values. I don’t need to store the JWTs
+anywhere because they can be verified with just the secret. Keyv has a couple of
+adapters that make it easy to connect it to a persistent database, personally I
+use postgres. Lastly I needed bcrypt to hash the stored passwords. With these
+three libraries the whole service (without user creation auth) is only a single
+file of 81 sloc (single lines of code). It only has four methods: &lt;code&gt;/token
+&lt;/code&gt;, &lt;code&gt;/validate&lt;/code&gt;, &lt;code&gt;GET&lt;/code&gt; on &lt;code&gt;/user&lt;/code&gt; and
+&lt;code&gt;POST&lt;/code&gt; on &lt;code&gt;/user&lt;/code&gt;. For specific information on how it
 works and to try it out check
 &lt;a href=&quot;https://github.com/mees-/jwt-service&quot;&gt;the github repo&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Create an issue if you think something should be better, I’ll probably extend it
