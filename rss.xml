@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 06 May 2020 13:00:59 GMT</lastBuildDate><item><title><![CDATA[JWT service]]></title><description><![CDATA[Hey I’m back with a second post today, and an exciting one. I actually made
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 10 May 2020 15:47:12 GMT</lastBuildDate><item><title><![CDATA[stateofthe.cards technical choices]]></title><description><![CDATA[This entry outlines the technical decisions that have been made for building the
+card game website that my and my project group came up with…]]></description><link>https:/journal.mees.io/state-of-the-cards-tech-choices/</link><guid isPermaLink="false">https:/journal.mees.io/state-of-the-cards-tech-choices/</guid><pubDate>Sun, 10 May 2020 17:22:00 GMT</pubDate><content:encoded>&lt;p&gt;This entry outlines the technical decisions that have been made for building the
+card game website that my and my project group came up with. We will make a
+modular card game with a card game editor where users can make up their own rules
+for games.&lt;/p&gt;
+&lt;p&gt;My project group consists of &lt;a href=&quot;https://github.com/ThowV&quot;&gt;Thomas&lt;/a&gt;,
+&lt;a href=&quot;https://github.com/LutzenH&quot;&gt;Lutzen&lt;/a&gt;, &lt;a href=&quot;https://github.com/Prusias&quot;&gt;Mike&lt;/a&gt; and
+&lt;a href=&quot;https://github.com/mees-&quot;&gt;me&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Frontend framework - &lt;a href=&quot;https://reactjs.org&quot;&gt;React&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For the frontend framework we decided to go with react. This is because react is
+only the view layer and it leaves us free to choose whatever libraries we want
+to use for the state and data-fetching, the controller and model.&lt;br&gt;
+Furthermore, react is very popular and has a lot of community support. There are
+tons of available resources to help learn react and React, like angular, has a
+big company supporting it together with the open source community.&lt;/p&gt;
+&lt;h3&gt;API server - &lt;a href=&quot;https://nodejs.org&quot;&gt;Node.js&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Node.js is chrome’s V8 javascript engine transplanted into a server scenario.
+They bascially removed the DOM and added IO api’s in order to facilitate server
+development. Node has &lt;a href=&quot;https://www.npmjs.com&quot;&gt;a huge library of packages&lt;/a&gt; which
+can greatly simplify development. Express is the server framework we will use.
+Express, while not the newest and coolest framework on the block, is very robust
+and well tested. It is one of the most popular npm packages and it’s probably
+the most popular web framework for Node.&lt;/p&gt;
+&lt;h3&gt;File server - &lt;a href=&quot;https://www.nginx.com/&quot;&gt;NGINX&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Since we are building a PWA (progressive web app), we only need to serve a
+static bundle as our app, the app will then fetch all the data it needs from the
+api by itself. NGINX is a very stable, battle-tested web server. It supports
+advanced configuration but also isn’t hard to work with. NGINX can also serve as
+a reverse-proxy for our api, which allows us to route requests to the same
+domain to multiple different servers&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JWT service]]></title><description><![CDATA[Hey I’m back with a second post today, and an exciting one. I actually made
 something that I listed in the last post. I made a
 JWT service…]]></description><link>https:/journal.mees.io/jwt-service/</link><guid isPermaLink="false">https:/journal.mees.io/jwt-service/</guid><pubDate>Tue, 05 May 2020 20:08:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey I’m back with a second post today, and an exciting one. I actually made
 something that I listed in the last post. I made a
