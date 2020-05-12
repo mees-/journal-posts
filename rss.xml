@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 May 2020 09:40:36 GMT</lastBuildDate><item><title><![CDATA[JWT continued]]></title><description><![CDATA[So recently I made my JWT service. It’s
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 May 2020 10:40:12 GMT</lastBuildDate><item><title><![CDATA[RSS]]></title><description><![CDATA[Hey there, I’m just writing this entry to let you know that I’ve added an RSS feed to the
+journal. you can find it at this link. You can use…]]></description><link>https:/journal.mees.io/rss/</link><guid isPermaLink="false">https:/journal.mees.io/rss/</guid><pubDate>Tue, 12 May 2020 12:29:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey there,&lt;/p&gt;
+&lt;p&gt;I’m just writing this entry to let you know that I’ve added an RSS feed to the
+journal. you can find it at &lt;a href=&quot;https://journal.mees.io/rss.xml&quot;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can use this feed to read my blog posts in your favorite RSS reader, or use
+&lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt; to get my entries in your mailbox!&lt;/p&gt;
+&lt;p&gt;If you do want to use IFTTT then check out
+&lt;a href=&quot;https://ifttt.com/applets/112937255d&quot;&gt;this applet&lt;/a&gt; that I made to email me the
+new entries.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JWT continued]]></title><description><![CDATA[So recently I made my JWT service. It’s
 working and nice but I realised this is not “it”. When I started making the JWT
 service I didn’t…]]></description><link>https:/journal.mees.io/jwt-continued/</link><guid isPermaLink="false">https:/journal.mees.io/jwt-continued/</guid><pubDate>Tue, 12 May 2020 10:45:00 GMT</pubDate><content:encoded>&lt;p&gt;So recently I made my &lt;a href=&quot;https://github.com/mees-/jwt-service&quot;&gt;JWT service&lt;/a&gt;. It’s
 working and nice but I realised this is not “it”. When I started making the JWT
