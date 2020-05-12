@@ -19,7 +19,7 @@ had.
 
 I initially wanted to develop this application for my private journal but once I
 got it running and looking sort of what I want it to look like I couldn't not
-publish it. And since I want to publish it it should probably have at least one
+publish it. And since I want to publish it, it should probably have at least one
 post.
 
 That's my first post. I'll probably (hopefully) make some more improvements. One

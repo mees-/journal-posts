@@ -23,7 +23,7 @@ big company supporting it together with the open source community.
 
 ### API server - [Node.js](https://nodejs.org)
 Node.js is chrome's V8 javascript engine transplanted into a server scenario.
-They bascially removed the DOM and added IO api's in order to facilitate server
+They basically removed the DOM and added IO API's in order to facilitate server
 development. Node has [a huge library of packages](https://www.npmjs.com) which
 can greatly simplify development. Express is the server framework we will use.
 Express, while not the newest and coolest framework on the block, is very robust
@@ -33,7 +33,7 @@ the most popular web framework for Node.
 ### File server - [NGINX](https://www.nginx.com/)
 Since we are building a PWA (progressive web app), we only need to serve a
 static bundle as our app, the app will then fetch all the data it needs from the
-api by itself. NGINX is a very stable, battle-tested web server. It supports
+API by itself. NGINX is a very stable, battle-tested web server. It supports
 advanced configuration but also isn't hard to work with. NGINX can also serve as
 a reverse-proxy for our api, which allows us to route requests to the same
 domain to multiple different servers
