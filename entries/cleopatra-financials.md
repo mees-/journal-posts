@@ -1,7 +1,7 @@
 ---
 title: Cleopatra financially
 location: My Mom's house, Zwolle
-date: 2020-05-23T1:50
+date: 2020-05-23T01:50
 ---
 I'm (probably) going to be in the board of my student society next year. I'll be
 in a financial role and I've been preparing for a couple weeks now. The
