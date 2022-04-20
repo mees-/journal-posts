@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Apr 2021 22:13:06 GMT</lastBuildDate><item><title><![CDATA[Hobby coding]]></title><description><![CDATA[Coding when I’m home. Unfortunately, it’s not really something I do anymore. While I’ve been using my
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 Apr 2022 10:38:29 GMT</lastBuildDate><item><title><![CDATA[Registers, MMIO, MMUs and a HART]]></title><description><![CDATA[Well first of all, it’s been a while and I very much wasn’t sure whether I would
+ever write another entry. But I’ve found something very…]]></description><link>https:/journal.mees.io/Registers-MMIO-MMUs-HART/</link><guid isPermaLink="false">https:/journal.mees.io/Registers-MMIO-MMUs-HART/</guid><pubDate>Wed, 20 Apr 2022 08:42:00 GMT</pubDate><content:encoded>&lt;p&gt;Well first of all, it’s been a while and I very much wasn’t sure whether I would
+ever write another entry. But I’ve found something very interesting on Reddit.&lt;/p&gt;
+&lt;p&gt;Yesterday morning I woke up in the house of one of my friend’s parents. We had
+had a party the night before and slept over, since it’s far away from where I
+live. As I was scrolling Reddit early in the morning I came across a post
+mentioning
+&lt;a href=&quot;https://osblog.stephenmarz.com/index.html&quot;&gt;someone’s blog about building an OS in Rust for the RISC-V architecture&lt;/a&gt;.
+I’ve been playing with my Arduino a little bit lately and I had also already
+come across a project that simplifies Rust development on Arduino. I learned to
+program the Arduino in C (not the official Arduino C++ suite) in college two
+years ago so I already knew a bit about bare metal programming. RISC-V was no
+Arduino however, this was a much more complicated integrated instruction set
+(ISA) than the one that my Arduino runs. My Arduino, which is an Uno Rev3 runs
+on an Atmega328p processor. That chip contains the flash (for storing the
+program), eeprom (a sort of non-volatile RAM) and it’s SRAM (actual RAM) all on
+the same chip as it’s processor core. This is what’s known as a
+&lt;a href=&quot;https://en.wikipedia.org/wiki/System_on_a_chip&quot;&gt;System on a Chip (SoC)&lt;/a&gt; and it
+combines some parts of a computer all in one chip. The Arduino actually also has
+a whole other SoC, an Atmega16u2, as a co-processor which acts as a converter
+between the serial interface and USB, basically it handles all USB things.&lt;/p&gt;
+&lt;p&gt;RISC-V is a lot more complicated than this, while also being a good stepping
+stone to keep learning more about hardware. RISC-V uses, like Atmel’s AVR, a
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Reduced_instruction_set_computer&quot;&gt;Reduced Instruction Set Computing&lt;/a&gt;
+ISA. Which means that instead of thousands of instructions for the CPU, it has a
+couple hundred. RISC-V supports a lot more than AVR though. To me, as a relative
+noob (who hasn’t even completed that blog series yet), it seems one of the
+important differences between the two is the fact that RISC-V has an
+unprivileged mode. That means that the CPU can block or alter some of it’s
+behaviour when foreign programs are running. Exactly like how some program I
+download on my laptop can’t just go and modify my entire computer and hack me.
+Granted you can get hacked, but a program can’t &lt;em&gt;just&lt;/em&gt; do it. The Arduino
+doesn’t have that and that’s why writing an OS on an Arduino isn’t as
+spectacular. Because you need to trust all the software you put on it with the
+whole machine, you might as well write specialised software that skips having a
+kernel and OS at all.&lt;/p&gt;
+&lt;p&gt;All in all I’m learning a lot about the RISC-V architecture and how kernel and
+OS development works. I’m planning to practice some of it too. I’ll probably do
+it on my Arduino, even though it isn’t really useful (as described above). I’ve
+been interested in systems development for some time but the blog post series is
+a really good kick start to learn a lot more.&lt;br&gt;
+If I do end up writing an OS for the Arduino, I’ll write another entry about it.&lt;/p&gt;
+&lt;p&gt;For a short explanation of the title, MMIO is memory-mapped IO, the MMU is the
+memory management unit, which protects the RAM from unauthorized programs and a
+HART is a hardware thread AKA processor core.&lt;/p&gt;
+&lt;h2&gt;More interesting links&lt;/h2&gt;
+&lt;p&gt;I’ve been researching a lot of stuff related to these topics. If you’re
+interested, click some of the links!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://osblog.stephenmarz.com/index.html&quot;&gt;The blog again&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.Arduino.cc/&quot;&gt;Arduino&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/rust-embedded/awesome-embedded-rust&quot;&gt;Awesome Embedded Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://riscv.org/technical/specifications/&quot;&gt;RISC-V technical specification&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Hobby coding]]></title><description><![CDATA[Coding when I’m home. Unfortunately, it’s not really something I do anymore. While I’ve been using my
 mac more and more at home, instead of…]]></description><link>https:/journal.mees.io/hobby-coding/</link><guid isPermaLink="false">https:/journal.mees.io/hobby-coding/</guid><pubDate>Thu, 29 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Coding when I’m home.&lt;/p&gt;
 &lt;p&gt;Unfortunately, it’s not really something I do anymore. While I’ve been using my
 mac more and more at home, instead of my desktop pc, I don’t actually use it to
@@ -15,7 +68,7 @@ apps that could solve my problem but they’re all either a bit too simple or
 really old and bad.&lt;/p&gt;
 &lt;p&gt;I’ll let you know if I manage to start building my own.&lt;/p&gt;
 &lt;p&gt;Cya&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Cleopatra financially]]></title><description><![CDATA[I’m (probably) going to be in the board of my student society next year. I’ll be
-in a financial role and I’ve been preparing for a couple…]]></description><link>https:/journal.mees.io/cleopatra-financials/</link><guid isPermaLink="false">https:/journal.mees.io/cleopatra-financials/</guid><pubDate>Sat, 23 May 2020 01:50:00 GMT</pubDate><content:encoded>&lt;p&gt;I’m (probably) going to be in the board of my student society next year. I’ll be
+in a financial role and I’ve been preparing for a couple…]]></description><link>https:/journal.mees.io/cleopatra-financials/</link><guid isPermaLink="false">https:/journal.mees.io/cleopatra-financials/</guid><pubDate>Fri, 22 May 2020 23:50:00 GMT</pubDate><content:encoded>&lt;p&gt;I’m (probably) going to be in the board of my student society next year. I’ll be
 in a financial role and I’ve been preparing for a couple weeks now. The
 prospective board needs to present a plan they’ve made for their year. This plan
 details what strategies and leadership they will exercise in their year.&lt;/p&gt;
@@ -42,7 +95,7 @@ analysed historical data.&lt;/p&gt;
 &lt;p&gt;I’m pretty happy with my budget plan that I have so far, even though it’s not a
 very positive outlook on the next year, I believe it’s a realistic one. Because
 corona has big effects on bars and cafe’s.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RSS]]></title><description><![CDATA[Hey there, I’m just writing this entry to let you know that I’ve added an RSS feed to the
-journal. you can find it at this link. You can use…]]></description><link>https:/journal.mees.io/rss-feed/</link><guid isPermaLink="false">https:/journal.mees.io/rss-feed/</guid><pubDate>Tue, 12 May 2020 12:29:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey there,&lt;/p&gt;
+journal. you can find it at this link. You can use…]]></description><link>https:/journal.mees.io/rss-feed/</link><guid isPermaLink="false">https:/journal.mees.io/rss-feed/</guid><pubDate>Tue, 12 May 2020 10:29:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey there,&lt;/p&gt;
 &lt;p&gt;I’m just writing this entry to let you know that I’ve added an RSS feed to the
 journal. you can find it at &lt;a href=&quot;https://journal.mees.io/rss.xml&quot;&gt;this link&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can use this feed to read my blog posts in your favorite RSS reader, or use
@@ -51,7 +104,7 @@ journal. you can find it at &lt;a href=&quot;https://journal.mees.io/rss.xml&quo
 &lt;a href=&quot;https://ifttt.com/applets/112937255d&quot;&gt;this applet&lt;/a&gt; that I made to email me the
 new entries.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JWT continued]]></title><description><![CDATA[So recently I made my JWT service. It’s
 working and nice but I realised this is not “it”. When I started making the JWT
-service I didn’t…]]></description><link>https:/journal.mees.io/jwt-continued/</link><guid isPermaLink="false">https:/journal.mees.io/jwt-continued/</guid><pubDate>Tue, 12 May 2020 10:45:00 GMT</pubDate><content:encoded>&lt;p&gt;So recently I made my &lt;a href=&quot;https://github.com/mees-/jwt-service&quot;&gt;JWT service&lt;/a&gt;. It’s
+service I didn’t…]]></description><link>https:/journal.mees.io/jwt-continued/</link><guid isPermaLink="false">https:/journal.mees.io/jwt-continued/</guid><pubDate>Tue, 12 May 2020 08:45:00 GMT</pubDate><content:encoded>&lt;p&gt;So recently I made my &lt;a href=&quot;https://github.com/mees-/jwt-service&quot;&gt;JWT service&lt;/a&gt;. It’s
 working and nice but I realised this is not “it”. When I started making the JWT
 service I didn’t really know what jwt was and how it worked. I had sufficient
 understanding of cryptography to know what hashes and signatures were and I also
@@ -72,7 +125,7 @@ verify the tokens without having to make that extra request.&lt;/p&gt;
 application, the best way would probably be to keep the jwt parts and the rest
 of the server together, which allows it to use HMAC and gain the performance
 benefits that come with it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[stateofthe.cards technical choices]]></title><description><![CDATA[This entry outlines the technical decisions that have been made for building the
-card game website that my and my project group came up with…]]></description><link>https:/journal.mees.io/state-of-the-cards-tech-choices/</link><guid isPermaLink="false">https:/journal.mees.io/state-of-the-cards-tech-choices/</guid><pubDate>Sun, 10 May 2020 17:22:00 GMT</pubDate><content:encoded>&lt;p&gt;This entry outlines the technical decisions that have been made for building the
+card game website that my and my project group came up with…]]></description><link>https:/journal.mees.io/state-of-the-cards-tech-choices/</link><guid isPermaLink="false">https:/journal.mees.io/state-of-the-cards-tech-choices/</guid><pubDate>Sun, 10 May 2020 15:22:00 GMT</pubDate><content:encoded>&lt;p&gt;This entry outlines the technical decisions that have been made for building the
 card game website that my and my project group came up with. We will make a
 modular card game with a card game editor where users can make up their own rules
 for games.&lt;/p&gt;
@@ -102,7 +155,7 @@ advanced configuration but also isn’t hard to work with. NGINX can also serve 
 a reverse-proxy for our api, which allows us to route requests to the same
 domain to multiple different servers&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JWT service]]></title><description><![CDATA[Hey I’m back with a second post today, and an exciting one. I actually made
 something that I listed in the last post. I made a
-JWT service…]]></description><link>https:/journal.mees.io/jwt-service/</link><guid isPermaLink="false">https:/journal.mees.io/jwt-service/</guid><pubDate>Tue, 05 May 2020 20:08:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey I’m back with a second post today, and an exciting one. I actually made
+JWT service…]]></description><link>https:/journal.mees.io/jwt-service/</link><guid isPermaLink="false">https:/journal.mees.io/jwt-service/</guid><pubDate>Tue, 05 May 2020 18:08:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey I’m back with a second post today, and an exciting one. I actually made
 something that I listed in the last post. I made a
 &lt;a href=&quot;https://github.com/mees-/jwt-service&quot;&gt;JWT service&lt;/a&gt;. It’s really simple and
 doesn’t control adding users to the list, which means that everyone can add
@@ -128,7 +181,7 @@ works and to try it out check
 &lt;p&gt;Create an issue if you think something should be better, I’ll probably extend it
 a little bit more with extra data on users and authorization on creating users
 but for now it works.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Users app]]></title><description><![CDATA[Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
-when we celebrate that we’ve been freed from war. Normally I…]]></description><link>https:/journal.mees.io/users-app/</link><guid isPermaLink="false">https:/journal.mees.io/users-app/</guid><pubDate>Tue, 05 May 2020 10:12:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
+when we celebrate that we’ve been freed from war. Normally I…]]></description><link>https:/journal.mees.io/users-app/</link><guid isPermaLink="false">https:/journal.mees.io/users-app/</guid><pubDate>Tue, 05 May 2020 08:12:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy liberation day to all my fellow dutch people. Today, the fifth of may, is
 when we celebrate that we’ve been freed from war. Normally I’d be going to one
 of the (free) festivals that are organised each year, but this year that won’t
 be an option. So instead I might watch some streams that are organised as a
@@ -144,7 +197,7 @@ to just build a really simple app that has secure login and a database, just
 like you would when building a real, production app. I really want to learn
 JWT and GraphQL and I think this could be a good way to do it.&lt;/p&gt;
 &lt;p&gt;I’ll let you know how it went when (if) I’m done making it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Project ideas]]></title><description><![CDATA[I think that because of getting back into actually coding with this project I
-might try and do some more projects sometime, hopefully soon…]]></description><link>https:/journal.mees.io/project-ideas/</link><guid isPermaLink="false">https:/journal.mees.io/project-ideas/</guid><pubDate>Sun, 03 May 2020 18:52:00 GMT</pubDate><content:encoded>&lt;p&gt;I think that because of getting back into actually coding with this project I
+might try and do some more projects sometime, hopefully soon…]]></description><link>https:/journal.mees.io/project-ideas/</link><guid isPermaLink="false">https:/journal.mees.io/project-ideas/</guid><pubDate>Sun, 03 May 2020 16:52:00 GMT</pubDate><content:encoded>&lt;p&gt;I think that because of getting back into actually coding with this project I
 might try and do some more projects sometime, hopefully soon. This entry will
 be a living list of projects or stuff that I want to use in a project.&lt;/p&gt;
 &lt;p&gt;I’ve also been doing some Google analytics and search console things. While I
@@ -162,7 +215,7 @@ existing file from the template that I started with that automatically generates
 &lt;/ul&gt;
 &lt;p&gt;I’ll let you know if I do anything and I’ll keep updating the list when I
 think of more things I want to do.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Day two]]></title><description><![CDATA[I’ve been working some more on the blog today. I set up a better way to publish
-posts. I now have a separate git repository that is set up…]]></description><link>https:/journal.mees.io/day-two/</link><guid isPermaLink="false">https:/journal.mees.io/day-two/</guid><pubDate>Sat, 02 May 2020 18:58:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ve been working some more on the blog today. I set up a better way to publish
+posts. I now have a separate git repository that is set up…]]></description><link>https:/journal.mees.io/day-two/</link><guid isPermaLink="false">https:/journal.mees.io/day-two/</guid><pubDate>Sat, 02 May 2020 16:58:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ve been working some more on the blog today. I set up a better way to publish
 posts. I now have a separate git repository that is set up with
 &lt;a href=&quot;https://travis-ci.com&quot;&gt;travis-ci&lt;/a&gt;. Every time I push a new commit to the master
 branch there travis-ci does a new build.&lt;/p&gt;
@@ -190,7 +243,7 @@ feel free to submit issues or even pull requests if you want. If you submit a pr
 with a post to the post repo I might even accept the post as a guest post.&lt;/p&gt;
 &lt;p&gt;Till next time,&lt;br&gt;
 Mees&lt;/p&gt;</content:encoded></item><item><title><![CDATA[First entry]]></title><description><![CDATA[My first entry!   I build this blog application today, well actually yesterday. I built it with
-Gatsby. I knew Gatsby from projects I’ve…]]></description><link>https:/journal.mees.io/first-entry/</link><guid isPermaLink="false">https:/journal.mees.io/first-entry/</guid><pubDate>Sat, 02 May 2020 06:47:00 GMT</pubDate><content:encoded>&lt;p&gt;My first entry!  &lt;/p&gt;
+Gatsby. I knew Gatsby from projects I’ve…]]></description><link>https:/journal.mees.io/first-entry/</link><guid isPermaLink="false">https:/journal.mees.io/first-entry/</guid><pubDate>Sat, 02 May 2020 04:47:00 GMT</pubDate><content:encoded>&lt;p&gt;My first entry!  &lt;/p&gt;
 &lt;p&gt;I build this blog application today, well actually yesterday. I built it with
 &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt;. I knew Gatsby from projects I’ve done
 before but I have to say it was some work to get up to speed with the whole
