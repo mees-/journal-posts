@@ -1,3 +1,4 @@
 node_modules/
 .journal
 deploy.sh
+.GA_ID
