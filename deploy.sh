@@ -5,6 +5,7 @@ cd .journal
 npm install
 export POST_DIR=$(pwd)/../entries
 export SITE_URL="https://journal.mees.io"
+source ./GA_ID
 npm run build
 cd ..
 git checkout -f gh-pages
