@@ -1,7 +1,7 @@
 ---
 title: Registers, MMIO, MMUs and a HART
 location: Home, Groningen
-date: 2022-04-20T010:42
+date: 2022-04-20T10:42
 ---
 
 Well first of all, it's been a while and I very much wasn't sure whether I would
