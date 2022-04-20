@@ -2,7 +2,7 @@
 
 export POST_DIR=$(pwd)/../entries
 export SITE_URL="https://journal.mees.io"
-source ./GA_ID
+source ./.GA_ID
 
 git clone https://github.com/mees-/journal .journal
 cd .journal
