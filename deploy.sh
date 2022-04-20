@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export POST_DIR=$(pwd)/../entries
+export POST_DIR=$(pwd)/entries
 export SITE_URL="https://journal.mees.io"
 source ./.GA_ID
 
