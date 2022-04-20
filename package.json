@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "spellchecker-cli": "^4.9.1"
+  }
+}
