@@ -1,0 +1,15 @@
+AVR
+Atmega16u2
+Atmega328p
+Atmel
+Groningen
+ISA
+MMIO
+MMU
+MMUs
+Reddit
+SRAM
+behaviour
+eeprom
+noob
+specialised
