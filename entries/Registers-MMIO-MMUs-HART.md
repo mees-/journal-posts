@@ -16,7 +16,7 @@ I've been playing with my Arduino a little bit lately and I had also already
 come across a project that simplifies Rust development on Arduino. I learned to
 program the Arduino in C (not the official Arduino C++ suite) in college two
 years ago so I already knew a bit about bare metal programming. RISC-V was no
-Arduino however, this was a much more complicated integrated instruction set
+Arduino however, this was a much more complicated instruction set architecture
 (ISA) than the one that my Arduino runs. My Arduino, which is an Uno Rev3 runs
 on an Atmega328p processor. That chip contains the flash (for storing the
 program), eeprom (a sort of non-volatile RAM) and it's SRAM (actual RAM) all on
