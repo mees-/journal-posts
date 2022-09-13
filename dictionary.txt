@@ -13,3 +13,10 @@ behaviour
 eeprom
 noob
 specialised
+Postgres
+ORM
+OOP
+Cya
+Mees
+Mikro-orm
+EFCore
