@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 21 Apr 2022 13:02:27 GMT</lastBuildDate><item><title><![CDATA[Registers, MMIO, MMUs and a HART]]></title><description><![CDATA[Well first of all, it’s been a while and I very much wasn’t sure whether I would
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Journal]]></title><description><![CDATA[A journal/blog maintained by Mees van Dijk]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Sep 2022 11:11:08 GMT</lastBuildDate><item><title><![CDATA[Telegram bot]]></title><description><![CDATA[Telegram bot Recently I wrote about hobby coding and how I never really writer any code for
+fun anymore. Recently that has changed! Since…]]></description><link>https:/journal.mees.io/telegram-bot/</link><guid isPermaLink="false">https:/journal.mees.io/telegram-bot/</guid><pubDate>Tue, 13 Sep 2022 10:36:00 GMT</pubDate><content:encoded>&lt;h1&gt;Telegram bot&lt;/h1&gt;
+&lt;p&gt;Recently I wrote about hobby coding and how I never really writer any code for
+fun anymore.&lt;br&gt;
+Recently that has changed! Since April I’ve been working on a telegram bot for
+my student society. It has fun functions like seeing how many days it will be
+until your birthday or announcing the people who have birthdays on a day. It
+also can track some stats, like when you throw up or take a shit, because that’s
+what students like to track :P.&lt;/p&gt;
+&lt;p&gt;Other than the fun features it also has useful features. For example: a member
+can send a message to the bot that they want to have announced to the whole
+society (there is an announcement channel). The bot then forwards that message
+to the board of the society who can then approve, or deny the message. They can
+also choose to schedule the message for a later time.&lt;/p&gt;
+&lt;h2&gt;Technical&lt;/h2&gt;
+&lt;p&gt;The bot is built upon &lt;a href=&quot;https://github.com/telegraf/telegraf&quot;&gt;Telegraf.js&lt;/a&gt;.
+Telegraf is a telegram bot framework for Typescript and Node.js. While it
+arguably has poor documentation, it has fairly clear code and ways to use it.
+Overall I enjoyed using it, although I might say it’s lacking in some advanced
+features such as context aware handlers. For example, for using the announcement
+feature that my bot has, a user needs to run the command without arguments, then
+the bot will reply saying something along the lines of: “Send your announcement
+now”. Then the user sends another message with their announcement. The bot needs
+to know when someone sends an announcement message based on the context of the
+chat. Telegraf has some hints of a feature for this, but I never found out how
+to use it due to a lack of documentation. I ended up using a third party
+extension of the framework specifically for this feature.&lt;/p&gt;
+&lt;p&gt;Apart from Telegraf, the bot uses Postgres with
+&lt;a href=&quot;https://mikro-orm.io/&quot;&gt;Mikro-orm&lt;/a&gt;. Mikro-orm is a lovely ORM for node with good
+typescript support (using &lt;a href=&quot;https://github.com/dsherret/ts-morph&quot;&gt;ts-morph&lt;/a&gt;). I
+really like the ORM because it does all the simple things an ORM needs to do and
+provides a nice escape hatch for when you need to use more advanced SQL. They
+even provide ways to automatically cast the results back to a known entity type
+at the end of the “advanced SQL”. Furthermore their documentation is very good
+if you are just using the basics, though I think the documentation for more
+advanced features could be better.&lt;/p&gt;
+&lt;h2&gt;Bot structure&lt;/h2&gt;
+&lt;p&gt;The bot is structured in a way where all the commands it has are basically
+plugins. They are all defined in separate functions and take the bot object as
+an argument. With that bot object they can do basically anything, like
+registering commands and listening for events.&lt;br&gt;
+The bot also has a task system, that I’m currently overhauling. The task system
+was initially written for the scheduled announcement feature, but with the
+overhaul I also want to add periodic tasks like the birthday announcement. I
+want to make task more generic, so they can be used in many more situations. For
+this I’m also using Mikro-orm’s inheritance with table-per-hierarchy feature.&lt;br&gt;
+I first came across this concept at my work, working with EFCore. I really liked
+it because it works really well with OOP.&lt;/p&gt;
+&lt;p&gt;Overall I think people are generally happy with the bot and I want to keep
+working on it in my spare time, adding new features. After I complete the task
+overhaul I think I want to add a feature where people can sign up for the weekly
+dinner through the bot :).&lt;/p&gt;
+&lt;p&gt;Cya&lt;/p&gt;
+&lt;p&gt;Mees&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Registers, MMIO, MMUs and a HART]]></title><description><![CDATA[Well first of all, it’s been a while and I very much wasn’t sure whether I would
 ever write another entry. But I’ve found something very…]]></description><link>https:/journal.mees.io/Registers-MMIO-MMUs-HART/</link><guid isPermaLink="false">https:/journal.mees.io/Registers-MMIO-MMUs-HART/</guid><pubDate>Wed, 20 Apr 2022 08:42:00 GMT</pubDate><content:encoded>&lt;p&gt;Well first of all, it’s been a while and I very much wasn’t sure whether I would
 ever write another entry. But I’ve found something very interesting on Reddit.&lt;/p&gt;
 &lt;p&gt;Yesterday morning I woke up in the house of one of my friend’s parents. We had
@@ -56,8 +109,8 @@ mac more and more at home, instead of…]]></description><link>https:/journal.me
 &lt;p&gt;Unfortunately, it’s not really something I do anymore. While I’ve been using my
 mac more and more at home, instead of my desktop pc, I don’t actually use it to
 write code anymore.&lt;/p&gt;
-&lt;p&gt;I think I’ve just been way to busy, I still enjoy coding and I really hope I can
-rekindle some of my passion for hobby projects. For a while now I’ve been
+&lt;p&gt;I think I’ve just been way too busy, I still enjoy coding and I really hope I
+can rekindle some of my passion for hobby projects. For a while now I’ve been
 daydreaming of building a financial bookkeeping application for personal use.
 The motivation here is my almost-daily use of another bookkeeping website:
 twinfield.&lt;/p&gt;
