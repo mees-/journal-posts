@@ -4,8 +4,6 @@ date: 2022-09-13T12:36
 location: Campus, Groningen
 ---
 
-# Telegram bot
-
 Recently I wrote about hobby coding and how I never really writer any code for
 fun anymore.  
 Recently that has changed! Since April I've been working on a telegram bot for
